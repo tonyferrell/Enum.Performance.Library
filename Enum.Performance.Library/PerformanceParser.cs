@@ -52,7 +52,7 @@ namespace Enum.Performance.Library
             result = new Dictionary<TEnum, string>();
 
             TEnum[] values = (TEnum[])System.Enum.GetValues(inputType);
-            foreach(TEnum enumValue in values)
+            foreach (TEnum enumValue in values)
             {
                 result[enumValue] = enumValue.ToString();
             }
@@ -96,7 +96,7 @@ namespace Enum.Performance.Library
             result = new Dictionary<string, TEnum>();
 
             TEnum[] values = (TEnum[])System.Enum.GetValues(inputType);
-            foreach(TEnum enumValue in values)
+            foreach (TEnum enumValue in values)
             {
                 string enumText = enumValue.ToString();
                 string key = normalizer == null ? enumText : normalizer(enumText);
