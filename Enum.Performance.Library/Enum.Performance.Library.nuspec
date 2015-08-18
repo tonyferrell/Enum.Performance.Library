@@ -2,13 +2,14 @@
 <package >
   <metadata>
     <id>Enum.Performance.Library.dll</id>
-    <version>0.0.1</version>
+    <version>$version$</version>
     <authors>Tony Ferrell</authors>
     <owners>Tony Ferrell</owners>
     <licenseUrl>https://github.com/tonyferrell/Enum.Performance.Library/blob/master/LICENCE.md</licenseUrl>
     <projectUrl>https://github.com/tonyferrell/Enum.Performance.Library</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description> C#'s System.Enum class can be incredibly performant and still let you maintain readable code.  Unfortunatly, performing operations like listing all enum values, converting enum's back to their string names, and parsing strings to enum values are incredibly non-performant. In low-latency/high-performance systems, this can have a huge negative impact on your performance metrics.
+    <summary>Provides utilities for performant enum conversaion.</summary>
+    <description>C#'s System.Enum class can be incredibly performant and still let you maintain readable code.  Unfortunatly, performing operations like listing all enum values, converting enum's back to their string names, and parsing strings to enum values are incredibly non-performant. In low-latency/high-performance systems, this can have a huge negative impact on your performance metrics.
 
 The ideal solution would be to treat all Enum's as their underlying type, and only do conversions offline. However this is not always feasible, and this package will help by providing some tools to trade off that processing time for a little bit of space.
     </description>
