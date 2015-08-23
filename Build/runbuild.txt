@@ -1,0 +1,551 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20150823033421
+Username: CARIBOU\Tony
+RunAs User: CARIBOU\Tony
+Machine: CARIBOU (Microsoft Windows NT 10.0.10240.0)
+Host Application: powershell -Command & { Start-Transcript E:\code\Enum.Performance.Library\Build\runbuild.txt; Import-Module E:\code\Enum.Performance.Library\Build\..\Tools\PSake\psake.psm1; Invoke-psake E:\code\Enum.Performance.Library\Build\..\Build\build.ps1 ; Stop-Transcript; }
+Process ID: 13740
+PSVersion: 5.0.10240.16384
+WSManStackVersion: 3.0
+SerializationVersion: 1.1.0.1
+CLRVersion: 4.0.30319.42000
+BuildVersion: 10.0.10240.16384
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0.10240.16384
+PSRemotingProtocolVersion: 2.3
+**********************
+Transcript started, output file is E:\code\Enum.Performance.Library\Build\runbuild.txt
+psake version 4.4.2
+Copyright (c) 2010-2015 James Kovacs, Damian Hickey & Contributors
+
+Executing Clean
+Setting location to E:\code\Enum.Performance.Library
+Deleting existing working directory E:\code\Enum.Performance.Library\Working
+Creating working directory E:\code\Enum.Performance.Library\Working
+
+
+    Directory: E:\code\Enum.Performance.Library
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----        8/23/2015     03:34                Working
+Executing Build
+Copying source to working source directory E:\code\Enum.Performance.Library\Working\Src
+
+-------------------------------------------------------------------------------
+   ROBOCOPY     ::     Robust File Copy for Windows
+-------------------------------------------------------------------------------
+
+  Started : Sunday, August 23, 2015 03:34:21
+   Source : E:\code\Enum.Performance.Library\Src\
+     Dest : E:\code\Enum.Performance.Library\Working\Src\
+
+    Files : *.*
+
+Exc Files : *.suo
+	    *.user
+
+ Exc Dirs : bin
+	    obj
+	    TestResults
+	    AppPackages
+
+  Options : *.* /S /E /DCOPY:DA /COPY:DAT /PURGE /MIR /NP /R:1000000 /W:30
+
+------------------------------------------------------------------------------
+
+	  New Dir          4	E:\code\Enum.Performance.Library\Src\
+	    New File  		    1051	Enum.Performance.Library.Net20.sln
+	    New File  		    1051	Enum.Performance.Library.Net35.sln
+	    New File  		    1051	Enum.Performance.Library.Net40.sln
+	    New File  		    1571	Enum.Performance.Library.sln
+	  New Dir          0	E:\code\Enum.Performance.Library\Src\.vs\
+	  New Dir          0	E:\code\Enum.Performance.Library\Src\.vs\Enum.Performance.Library\
+	  New Dir          1	E:\code\Enum.Performance.Library\Src\.vs\Enum.Performance.Library\v14\
+	  New Dir          0	E:\code\Enum.Performance.Library\Src\.vs\Enum.Performance.Library.Net20\
+	  New Dir          1	E:\code\Enum.Performance.Library\Src\.vs\Enum.Performance.Library.Net20\v14\
+	  New Dir          0	E:\code\Enum.Performance.Library\Src\.vs\Enum.Performance.Library.Net35\
+	  New Dir          1	E:\code\Enum.Performance.Library\Src\.vs\Enum.Performance.Library.Net35\v14\
+	  New Dir          0	E:\code\Enum.Performance.Library\Src\.vs\Enum.Performance.Library.Net40\
+	  New Dir          1	E:\code\Enum.Performance.Library\Src\.vs\Enum.Performance.Library.Net40\v14\
+	  New Dir          7	E:\code\Enum.Performance.Library\Src\Enum.Performance.Library\
+	    New File  		    5862	Enum.Performance.Library.1.0.0.0.nupkg
+	    New File  		    2499	Enum.Performance.Library.csproj
+	    New File  		    5880	Enum.Performance.Library.dll.1.0.0.0.nupkg
+	    New File  		    2267	Enum.Performance.Library.Net20.csproj
+	    New File  		    2302	Enum.Performance.Library.Net35.csproj
+	    New File  		    2307	Enum.Performance.Library.Net40.csproj
+	    New File  		    4771	PerformanceParser.cs
+	  New Dir          1	E:\code\Enum.Performance.Library\Src\Enum.Performance.Library\Properties\
+	    New File  		    1470	AssemblyInfo.cs
+	  New Dir          4	E:\code\Enum.Performance.Library\Src\Enum.Performance.UnitTests\
+	    New File  		    4881	Enum.Performance.UnitTests.csproj
+	    New File  		    2055	LargeEnum.cs
+	    New File  		     110	SimilarEnum.cs
+	    New File  		     140	SmallEnum.cs
+	  New Dir          1	E:\code\Enum.Performance.Library\Src\Enum.Performance.UnitTests\Functional\
+	    New File  		    3662	PerformanceParserTests.cs
+	  New Dir          1	E:\code\Enum.Performance.Library\Src\Enum.Performance.UnitTests\Performance\
+	    New File  		    1727	PerformanceParserPerformanceTests.cs
+	  New Dir          1	E:\code\Enum.Performance.Library\Src\Enum.Performance.UnitTests\Properties\
+	    New File  		    1464	AssemblyInfo.cs
+
+------------------------------------------------------------------------------
+
+               Total    Copied   Skipped  Mismatch    FAILED    Extras
+    Dirs :        21        16         5         0         0         0
+   Files :        23        19         4         0         0         0
+   Bytes :   186.0 k    45.0 k   141.0 k         0         0         0
+   Times :   0:00:00   0:00:00                       0:00:00   0:00:00
+
+
+   Speed :             4612100 Bytes/sec.
+   Speed :             263.906 MegaBytes/min.
+   Ended : Sunday, August 23, 2015 03:34:21
+
+Updating assembly version
+
+E:\code\Enum.Performance.Library\Working\Src\Enum.Performance.Library\Properties\AssemblyInfo.cs
+E:\code\Enum.Performance.Library\Working\Src\Enum.Performance.Library\Properties\AssemblyInfo.cs -> 1.0.1.18823
+E:\code\Enum.Performance.Library\Working\Src\Enum.Performance.UnitTests\Properties\AssemblyInfo.cs
+E:\code\Enum.Performance.Library\Working\Src\Enum.Performance.UnitTests\Properties\AssemblyInfo.cs -> 1.0.1.1882
+3
+Building  Enum.Performance.Library
+
+Restoring E:\code\Enum.Performance.Library\Working\Src\Enum.Performance.Library.sln
+Checking for updates from https://www.nuget.org/api/v2/.
+Currently running NuGet.exe 2.8.6.
+NuGet.exe is up to date.
+
+Building
+Microsoft (R) Build Engine version 14.0.23107.0
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Building the projects in this solution one at a time. To enable parallel build, please add the "/m" switch.
+Build started 8/23/2015 03:34:23.
+Project "E:\code\Enum.Performance.Library\Working\Src\Enum.Performance.Library.sln" on node 1 (Clean;Rebuild tar
+get(s)).
+ValidateSolutionConfiguration:
+  Building solution configuration "Release|Any CPU".
+The target "AfterGenerateAppxManifest" listed in an AfterTargets attribute at "C:\Program Files (x86)\MSBuild\Mi
+crosoft\.NetNative\Microsoft.Net.CoreRuntime.targets (68,11)" does not exist in the project, and will be ignored
+.
+The target "_GeneratePrisForPortableLibraries" listed in a BeforeTargets attribute at "C:\Program Files (x86)\MS
+Build\Microsoft\.NetNative\Microsoft.Net.CoreRuntime.targets (177,11)" does not exist in the project, and will b
+e ignored.
+The target "AfterGenerateAppxManifest" listed in an AfterTargets attribute at "C:\Program Files (x86)\MSBuild\Mi
+crosoft\.NetNative\Microsoft.NetNative.targets (126,11)" does not exist in the project, and will be ignored.
+The target "AfterGenerateAppxManifest" listed in an AfterTargets attribute at "C:\Program Files (x86)\MSBuild\Mi
+crosoft\.NetNative\Microsoft.NetNative.targets (174,11)" does not exist in the project, and will be ignored.
+The target "BeforeGenerateProjectPriFile" listed in a BeforeTargets attribute at "C:\Program Files (x86)\MSBuild
+\Microsoft\NuGet\Microsoft.NuGet.targets (149,61)" does not exist in the project, and will be ignored.
+Project "E:\code\Enum.Performance.Library\Working\Src\Enum.Performance.Library.sln" (1) is building "E:\code\Enu
+m.Performance.Library\Working\Src\Enum.Performance.UnitTests\Enum.Performance.UnitTests.csproj" (2) on node 1 (C
+lean target(s)).
+CoreClean:
+  Creating directory "obj\Release\".
+The target "AfterGenerateAppxManifest" listed in an AfterTargets attribute at "C:\Program Files (x86)\MSBuild\Mi
+crosoft\.NetNative\Microsoft.Net.CoreRuntime.targets (68,11)" does not exist in the project, and will be ignored
+.
+The target "_GeneratePrisForPortableLibraries" listed in a BeforeTargets attribute at "C:\Program Files (x86)\MS
+Build\Microsoft\.NetNative\Microsoft.Net.CoreRuntime.targets (177,11)" does not exist in the project, and will b
+e ignored.
+The target "AfterGenerateAppxManifest" listed in an AfterTargets attribute at "C:\Program Files (x86)\MSBuild\Mi
+crosoft\.NetNative\Microsoft.NetNative.targets (126,11)" does not exist in the project, and will be ignored.
+The target "AfterGenerateAppxManifest" listed in an AfterTargets attribute at "C:\Program Files (x86)\MSBuild\Mi
+crosoft\.NetNative\Microsoft.NetNative.targets (174,11)" does not exist in the project, and will be ignored.
+The target "BeforeGenerateProjectPriFile" listed in a BeforeTargets attribute at "C:\Program Files (x86)\MSBuild
+\Microsoft\NuGet\Microsoft.NuGet.targets (149,61)" does not exist in the project, and will be ignored.
+Project "E:\code\Enum.Performance.Library\Working\Src\Enum.Performance.UnitTests\Enum.Performance.UnitTests.cspr
+oj" (2) is building "E:\code\Enum.Performance.Library\Working\Src\Enum.Performance.Library\Enum.Performance.Libr
+ary.csproj" (3) on node 1 (Clean target(s)).
+CoreClean:
+  Creating directory "obj\Release\".
+Done Building Project "E:\code\Enum.Performance.Library\Working\Src\Enum.Performance.Library\Enum.Performance.Li
+brary.csproj" (Clean target(s)).
+Done Building Project "E:\code\Enum.Performance.Library\Working\Src\Enum.Performance.UnitTests\Enum.Performance.
+UnitTests.csproj" (Clean target(s)).
+Project "E:\code\Enum.Performance.Library\Working\Src\Enum.Performance.Library.sln" (1) is building "E:\code\Enu
+m.Performance.Library\Working\Src\Enum.Performance.Library\Enum.Performance.Library.csproj" (3:3) on node 1 (Reb
+uild target(s)).
+PrepareForBuild:
+  Creating directory "bin\Release\Net45\".
+GenerateTargetFrameworkMonikerAttribute:
+Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect t
+o the input files.
+CoreCompile:
+  C:\Program Files (x86)\MSBuild\14.0\bin\csc.exe /noconfig /nowarn:1701,1702 /nostdlib+ /errorreport:prompt /wa
+rn:4 /define:CODE_ANALYSIS;TRACE /highentropyva+ /reference:"C:\Program Files (x86)\Reference Assemblies\Microso
+ft\Framework\.NETFramework\v4.5.2\Microsoft.CSharp.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\
+Microsoft\Framework\.NETFramework\v4.5.2\mscorlib.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\M
+icrosoft\Framework\.NETFramework\v4.5.2\System.Core.dll" /reference:"C:\Program Files (x86)\Reference Assemblies
+\Microsoft\Framework\.NETFramework\v4.5.2\System.Data.DataSetExtensions.dll" /reference:"C:\Program Files (x86)\
+Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.Data.dll" /reference:"C:\Program Files (x86
+)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.dll" /reference:"C:\Program Files (x86)\R
+eference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.Net.Http.dll" /reference:"C:\Program Files (
+x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.Xml.dll" /reference:"C:\Program Files
+(x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.Xml.Linq.dll" /debug:pdbonly /fileali
+gn:512 /optimize+ /out:obj\Release\Enum.Performance.Library.dll /ruleset:"E:\Program Files (x86)\Microsoft Visua
+l Studio 14.0\Team Tools\Static Analysis Tools\\Rule Sets\MinimumRecommendedRules.ruleset" /subsystemversion:6.0
+0 /target:library /warnaserror- /utf8output PerformanceParser.cs Properties\AssemblyInfo.cs "C:\Users\Tony\AppDa
+ta\Local\Temp\.NETFramework,Version=v4.5.2.AssemblyAttributes.cs"
+CopyFilesToOutputDirectory:
+  Copying file from "obj\Release\Enum.Performance.Library.dll" to "bin\Release\Net45\Enum.Performance.Library.dl
+l".
+  Enum.Performance.Library -> E:\code\Enum.Performance.Library\Working\Src\Enum.Performance.Library\bin\Release\
+Net45\Enum.Performance.Library.dll
+  Copying file from "obj\Release\Enum.Performance.Library.pdb" to "bin\Release\Net45\Enum.Performance.Library.pd
+b".
+Done Building Project "E:\code\Enum.Performance.Library\Working\Src\Enum.Performance.Library\Enum.Performance.Li
+brary.csproj" (Rebuild target(s)).
+Project "E:\code\Enum.Performance.Library\Working\Src\Enum.Performance.Library.sln" (1) is building "E:\code\Enu
+m.Performance.Library\Working\Src\Enum.Performance.UnitTests\Enum.Performance.UnitTests.csproj" (2:2) on node 1
+(Rebuild target(s)).
+PrepareForBuild:
+  Creating directory "bin\Release\Net45\".
+GenerateTargetFrameworkMonikerAttribute:
+Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect t
+o the input files.
+CoreCompile:
+  C:\Program Files (x86)\MSBuild\14.0\bin\csc.exe /noconfig /nowarn:1701,1702 /nostdlib+ /errorreport:prompt /wa
+rn:4 /define:CODE_ANALYSIS;TRACE /highentropyva+ /reference:E:\code\Enum.Performance.Library\Working\Src\Enum.Pe
+rformance.Library\bin\Release\Net45\Enum.Performance.Library.dll /reference:"E:\Program Files (x86)\Microsoft Vi
+sual Studio 14.0\Common7\IDE\PublicAssemblies\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll" /refere
+nce:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\mscorlib.dll" /referen
+ce:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.Core.dll" /refer
+ence:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.dll" /debug:pd
+bonly /filealign:512 /optimize+ /out:obj\Release\Enum.Performance.UnitTests.dll /ruleset:"E:\Program Files (x86)
+\Microsoft Visual Studio 14.0\Team Tools\Static Analysis Tools\\Rule Sets\MinimumRecommendedRules.ruleset" /subs
+ystemversion:6.00 /target:library /warnaserror- /utf8output LargeEnum.cs Performance\PerformanceParserPerformanc
+eTests.cs Functional\PerformanceParserTests.cs Properties\AssemblyInfo.cs SimilarEnum.cs SmallEnum.cs "C:\Users\
+Tony\AppData\Local\Temp\.NETFramework,Version=v4.5.2.AssemblyAttributes.cs"
+_CopyFilesMarkedCopyLocal:
+  Copying file from "E:\code\Enum.Performance.Library\Working\Src\Enum.Performance.Library\bin\Release\Net45\Enu
+m.Performance.Library.dll" to "bin\Release\Net45\Enum.Performance.Library.dll".
+  Copying file from "E:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\PublicAssemblies\Microsoft.
+VisualStudio.QualityTools.UnitTestFramework.dll" to "bin\Release\Net45\Microsoft.VisualStudio.QualityTools.UnitT
+estFramework.dll".
+  Copying file from "E:\code\Enum.Performance.Library\Working\Src\Enum.Performance.Library\bin\Release\Net45\Enu
+m.Performance.Library.pdb" to "bin\Release\Net45\Enum.Performance.Library.pdb".
+  Copying file from "E:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\PublicAssemblies\Microsoft.
+VisualStudio.QualityTools.UnitTestFramework.xml" to "bin\Release\Net45\Microsoft.VisualStudio.QualityTools.UnitT
+estFramework.xml".
+CopyFilesToOutputDirectory:
+  Copying file from "obj\Release\Enum.Performance.UnitTests.dll" to "bin\Release\Net45\Enum.Performance.UnitTest
+s.dll".
+  Enum.Performance.UnitTests -> E:\code\Enum.Performance.Library\Working\Src\Enum.Performance.UnitTests\bin\Rele
+ase\Net45\Enum.Performance.UnitTests.dll
+  Copying file from "obj\Release\Enum.Performance.UnitTests.pdb" to "bin\Release\Net45\Enum.Performance.UnitTest
+s.pdb".
+Done Building Project "E:\code\Enum.Performance.Library\Working\Src\Enum.Performance.UnitTests\Enum.Performance.
+UnitTests.csproj" (Rebuild target(s)).
+Done Building Project "E:\code\Enum.Performance.Library\Working\Src\Enum.Performance.Library.sln" (Clean;Rebuild
+ target(s)).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.31
+Building  Enum.Performance.Library.Net40
+
+Restoring E:\code\Enum.Performance.Library\Working\Src\Enum.Performance.Library.Net40.sln
+Checking for updates from https://www.nuget.org/api/v2/.
+Currently running NuGet.exe 2.8.6.
+NuGet.exe is up to date.
+
+Building
+Microsoft (R) Build Engine version 14.0.23107.0
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Building the projects in this solution one at a time. To enable parallel build, please add the "/m" switch.
+Build started 8/23/2015 03:34:25.
+Project "E:\code\Enum.Performance.Library\Working\Src\Enum.Performance.Library.Net40.sln" on node 1 (Clean;Rebui
+ld target(s)).
+ValidateSolutionConfiguration:
+  Building solution configuration "Release|Any CPU".
+The target "AfterGenerateAppxManifest" listed in an AfterTargets attribute at "C:\Program Files (x86)\MSBuild\Mi
+crosoft\.NetNative\Microsoft.Net.CoreRuntime.targets (68,11)" does not exist in the project, and will be ignored
+.
+The target "_GeneratePrisForPortableLibraries" listed in a BeforeTargets attribute at "C:\Program Files (x86)\MS
+Build\Microsoft\.NetNative\Microsoft.Net.CoreRuntime.targets (177,11)" does not exist in the project, and will b
+e ignored.
+The target "AfterGenerateAppxManifest" listed in an AfterTargets attribute at "C:\Program Files (x86)\MSBuild\Mi
+crosoft\.NetNative\Microsoft.NetNative.targets (126,11)" does not exist in the project, and will be ignored.
+The target "AfterGenerateAppxManifest" listed in an AfterTargets attribute at "C:\Program Files (x86)\MSBuild\Mi
+crosoft\.NetNative\Microsoft.NetNative.targets (174,11)" does not exist in the project, and will be ignored.
+The target "BeforeGenerateProjectPriFile" listed in a BeforeTargets attribute at "C:\Program Files (x86)\MSBuild
+\Microsoft\NuGet\Microsoft.NuGet.targets (149,61)" does not exist in the project, and will be ignored.
+Project "E:\code\Enum.Performance.Library\Working\Src\Enum.Performance.Library.Net40.sln" (1) is building "E:\co
+de\Enum.Performance.Library\Working\Src\Enum.Performance.Library\Enum.Performance.Library.Net40.csproj" (2:2) on
+ node 1 (Rebuild target(s)).
+PrepareForBuild:
+  Creating directory "bin\Release\Net40\".
+GenerateTargetFrameworkMonikerAttribute:
+Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect t
+o the input files.
+CoreCompile:
+  C:\Program Files (x86)\MSBuild\14.0\bin\csc.exe /noconfig /nowarn:1701,1702 /nostdlib+ /errorreport:prompt /wa
+rn:4 /define:CODE_ANALYSIS;TRACE;NET40 /highentropyva- /reference:"C:\Program Files (x86)\Reference Assemblies\M
+icrosoft\Framework\.NETFramework\v4.0\Microsoft.CSharp.dll" /reference:"C:\Program Files (x86)\Reference Assembl
+ies\Microsoft\Framework\.NETFramework\v4.0\mscorlib.dll" /reference:"C:\Program Files (x86)\Reference Assemblies
+\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll" /reference:"C:\Program Files (x86)\Reference Assemblies
+\Microsoft\Framework\.NETFramework\v4.0\System.dll" /debug:pdbonly /filealign:512 /optimize+ /out:obj\Release\En
+um.Performance.Library.Net40.dll /ruleset:"E:\Program Files (x86)\Microsoft Visual Studio 14.0\Team Tools\Static
+ Analysis Tools\\Rule Sets\MinimumRecommendedRules.ruleset" /target:library /warnaserror- /utf8output Performanc
+eParser.cs Properties\AssemblyInfo.cs "C:\Users\Tony\AppData\Local\Temp\.NETFramework,Version=v4.0.AssemblyAttri
+butes.cs"
+CopyFilesToOutputDirectory:
+  Copying file from "obj\Release\Enum.Performance.Library.Net40.dll" to "bin\Release\Net40\Enum.Performance.Libr
+ary.Net40.dll".
+  Enum.Performance.Library.Net40 -> E:\code\Enum.Performance.Library\Working\Src\Enum.Performance.Library\bin\Re
+lease\Net40\Enum.Performance.Library.Net40.dll
+  Copying file from "obj\Release\Enum.Performance.Library.Net40.pdb" to "bin\Release\Net40\Enum.Performance.Libr
+ary.Net40.pdb".
+Done Building Project "E:\code\Enum.Performance.Library\Working\Src\Enum.Performance.Library\Enum.Performance.Li
+brary.Net40.csproj" (Rebuild target(s)).
+Done Building Project "E:\code\Enum.Performance.Library\Working\Src\Enum.Performance.Library.Net40.sln" (Clean;R
+ebuild target(s)).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.18
+Building  Enum.Performance.Library.Net35
+
+Restoring E:\code\Enum.Performance.Library\Working\Src\Enum.Performance.Library.Net35.sln
+Checking for updates from https://www.nuget.org/api/v2/.
+Currently running NuGet.exe 2.8.6.
+NuGet.exe is up to date.
+
+Building
+Microsoft (R) Build Engine version 14.0.23107.0
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Building the projects in this solution one at a time. To enable parallel build, please add the "/m" switch.
+Build started 8/23/2015 03:34:27.
+Project "E:\code\Enum.Performance.Library\Working\Src\Enum.Performance.Library.Net35.sln" on node 1 (Clean;Rebui
+ld target(s)).
+ValidateSolutionConfiguration:
+  Building solution configuration "Release|Any CPU".
+The target "AfterGenerateAppxManifest" listed in an AfterTargets attribute at "C:\Program Files (x86)\MSBuild\Mi
+crosoft\.NetNative\Microsoft.Net.CoreRuntime.targets (68,11)" does not exist in the project, and will be ignored
+.
+The target "_GeneratePrisForPortableLibraries" listed in a BeforeTargets attribute at "C:\Program Files (x86)\MS
+Build\Microsoft\.NetNative\Microsoft.Net.CoreRuntime.targets (177,11)" does not exist in the project, and will b
+e ignored.
+The target "AfterGenerateAppxManifest" listed in an AfterTargets attribute at "C:\Program Files (x86)\MSBuild\Mi
+crosoft\.NetNative\Microsoft.NetNative.targets (126,11)" does not exist in the project, and will be ignored.
+The target "AfterGenerateAppxManifest" listed in an AfterTargets attribute at "C:\Program Files (x86)\MSBuild\Mi
+crosoft\.NetNative\Microsoft.NetNative.targets (174,11)" does not exist in the project, and will be ignored.
+The target "BeforeGenerateProjectPriFile" listed in a BeforeTargets attribute at "C:\Program Files (x86)\MSBuild
+\Microsoft\NuGet\Microsoft.NuGet.targets (149,61)" does not exist in the project, and will be ignored.
+Project "E:\code\Enum.Performance.Library\Working\Src\Enum.Performance.Library.Net35.sln" (1) is building "E:\co
+de\Enum.Performance.Library\Working\Src\Enum.Performance.Library\Enum.Performance.Library.Net35.csproj" (2:2) on
+ node 1 (Rebuild target(s)).
+PrepareForBuild:
+  Creating directory "bin\Release\Net35\".
+CoreCompile:
+  C:\Program Files (x86)\MSBuild\14.0\bin\csc.exe /noconfig /nowarn:1701,1702 /nostdlib+ /errorreport:prompt /wa
+rn:4 /define:CODE_ANALYSIS;TRACE;NET35 /highentropyva- /reference:C:\Windows\Microsoft.NET\Framework\v2.0.50727\
+mscorlib.dll /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\System.Core.dll" /
+reference:C:\Windows\Microsoft.NET\Framework\v2.0.50727\System.Data.dll /reference:C:\Windows\Microsoft.NET\Fram
+ework\v2.0.50727\System.dll /debug:pdbonly /filealign:512 /optimize+ /out:obj\Release\Enum.Performance.Library.N
+et35.dll /ruleset:"E:\Program Files (x86)\Microsoft Visual Studio 14.0\Team Tools\Static Analysis Tools\\Rule Se
+ts\MinimumRecommendedRules.ruleset" /target:library /warnaserror- /utf8output PerformanceParser.cs Properties\As
+semblyInfo.cs
+CopyFilesToOutputDirectory:
+  Copying file from "obj\Release\Enum.Performance.Library.Net35.dll" to "bin\Release\Net35\Enum.Performance.Libr
+ary.Net35.dll".
+  Enum.Performance.Library.Net35 -> E:\code\Enum.Performance.Library\Working\Src\Enum.Performance.Library\bin\Re
+lease\Net35\Enum.Performance.Library.Net35.dll
+  Copying file from "obj\Release\Enum.Performance.Library.Net35.pdb" to "bin\Release\Net35\Enum.Performance.Libr
+ary.Net35.pdb".
+Done Building Project "E:\code\Enum.Performance.Library\Working\Src\Enum.Performance.Library\Enum.Performance.Li
+brary.Net35.csproj" (Rebuild target(s)).
+Done Building Project "E:\code\Enum.Performance.Library\Working\Src\Enum.Performance.Library.Net35.sln" (Clean;R
+ebuild target(s)).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.18
+Building  Enum.Performance.Library.Net20
+
+Restoring E:\code\Enum.Performance.Library\Working\Src\Enum.Performance.Library.Net20.sln
+Checking for updates from https://www.nuget.org/api/v2/.
+Currently running NuGet.exe 2.8.6.
+NuGet.exe is up to date.
+
+Building
+Microsoft (R) Build Engine version 14.0.23107.0
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Building the projects in this solution one at a time. To enable parallel build, please add the "/m" switch.
+Build started 8/23/2015 03:34:29.
+Project "E:\code\Enum.Performance.Library\Working\Src\Enum.Performance.Library.Net20.sln" on node 1 (Clean;Rebui
+ld target(s)).
+ValidateSolutionConfiguration:
+  Building solution configuration "Release|Any CPU".
+The target "AfterGenerateAppxManifest" listed in an AfterTargets attribute at "C:\Program Files (x86)\MSBuild\Mi
+crosoft\.NetNative\Microsoft.Net.CoreRuntime.targets (68,11)" does not exist in the project, and will be ignored
+.
+The target "_GeneratePrisForPortableLibraries" listed in a BeforeTargets attribute at "C:\Program Files (x86)\MS
+Build\Microsoft\.NetNative\Microsoft.Net.CoreRuntime.targets (177,11)" does not exist in the project, and will b
+e ignored.
+The target "AfterGenerateAppxManifest" listed in an AfterTargets attribute at "C:\Program Files (x86)\MSBuild\Mi
+crosoft\.NetNative\Microsoft.NetNative.targets (126,11)" does not exist in the project, and will be ignored.
+The target "AfterGenerateAppxManifest" listed in an AfterTargets attribute at "C:\Program Files (x86)\MSBuild\Mi
+crosoft\.NetNative\Microsoft.NetNative.targets (174,11)" does not exist in the project, and will be ignored.
+The target "BeforeGenerateProjectPriFile" listed in a BeforeTargets attribute at "C:\Program Files (x86)\MSBuild
+\Microsoft\NuGet\Microsoft.NuGet.targets (149,61)" does not exist in the project, and will be ignored.
+Project "E:\code\Enum.Performance.Library\Working\Src\Enum.Performance.Library.Net20.sln" (1) is building "E:\co
+de\Enum.Performance.Library\Working\Src\Enum.Performance.Library\Enum.Performance.Library.Net20.csproj" (2:2) on
+ node 1 (Rebuild target(s)).
+PrepareForBuild:
+  Creating directory "bin\Release\Net20\".
+CoreCompile:
+  C:\Program Files (x86)\MSBuild\14.0\bin\csc.exe /noconfig /nowarn:1701,1702 /nostdlib+ /errorreport:prompt /wa
+rn:4 /define:CODE_ANALYSIS;TRACE;NET20 /highentropyva- /reference:C:\Windows\Microsoft.NET\Framework\v2.0.50727\
+mscorlib.dll /reference:C:\Windows\Microsoft.NET\Framework\v2.0.50727\System.Data.dll /reference:C:\Windows\Micr
+osoft.NET\Framework\v2.0.50727\System.dll /debug:pdbonly /filealign:512 /optimize+ /out:obj\Release\Enum.Perform
+ance.Library.Net20.dll /ruleset:"E:\Program Files (x86)\Microsoft Visual Studio 14.0\Team Tools\Static Analysis
+Tools\\Rule Sets\MinimumRecommendedRules.ruleset" /target:library /warnaserror- /utf8output PerformanceParser.cs
+ Properties\AssemblyInfo.cs
+CopyFilesToOutputDirectory:
+  Copying file from "obj\Release\Enum.Performance.Library.Net20.dll" to "bin\Release\Net20\Enum.Performance.Libr
+ary.Net20.dll".
+  Enum.Performance.Library.Net20 -> E:\code\Enum.Performance.Library\Working\Src\Enum.Performance.Library\bin\Re
+lease\Net20\Enum.Performance.Library.Net20.dll
+  Copying file from "obj\Release\Enum.Performance.Library.Net20.pdb" to "bin\Release\Net20\Enum.Performance.Libr
+ary.Net20.pdb".
+Done Building Project "E:\code\Enum.Performance.Library\Working\Src\Enum.Performance.Library\Enum.Performance.Li
+brary.Net20.csproj" (Rebuild target(s)).
+Done Building Project "E:\code\Enum.Performance.Library\Working\Src\Enum.Performance.Library.Net20.sln" (Clean;R
+ebuild target(s)).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.17
+Executing ConstructNuget
+
+
+    Directory: E:\code\Enum.Performance.Library\Working
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----        8/23/2015     03:34                NuGet
+Updating nuspec file at E:\code\Enum.Performance.Library\Working\NuGet\Enum.Performance.Library.nuspec
+
+Found 1 nodes with path '//*[local-name() = 'id']'
+Found 1 nodes with path '//*[local-name() = 'version']'
+<?xml version="1.0"?><package><metadata><id>Enum.Performance.Library</id><version>1.0.1-beta1</version><authors>Tony Ferrell</authors><owners>Tony Ferrell</owners><licenseUrl>https://github.com/tonyferrell/Enum.Performance.Library/blob/master/LICENCE.md</licenseUrl><projectUrl>https://github.com/tonyferrell/Enum.Performance.Library</projectUrl><requireLicenseAcceptance>false</requireLicenseAcceptance><summary>Provides utilities for performant enum conversaion.</summary><description>C#'s System.Enum class can be incredibly performant and still let you maintain readable code.  Unfortunatly, performing operations like listing all enum values, converting enum's back to their string names, and parsing strings to enum values are incredibly non-performant. In low-latency/high-performance systems, this can have a huge negative impact on your performance metrics.
+
+The ideal solution would be to treat all Enum's as their underlying type, and only do conversions offline. However this is not always feasible, and this package will help by providing some tools to trade off that processing time for a little bit of space.
+    </description><releaseNotes>Inital Release.</releaseNotes><copyright>Copyright 2015</copyright><tags>Enum String Performance Parsing</tags></metadata></package>
+
+-------------------------------------------------------------------------------
+   ROBOCOPY     ::     Robust File Copy for Windows
+-------------------------------------------------------------------------------
+
+  Started : Sunday, August 23, 2015 03:34:29
+   Source : E:\code\Enum.Performance.Library\Working\Src\Enum.Performance.Library\bin\Release\Net45\
+     Dest : E:\code\Enum.Performance.Library\Working\NuGet\lib\net45\
+
+    Files : *.dll
+	    *.pdb
+	    *.xml
+
+Exc Files : *.CodeAnalysisLog.xml
+
+  Options : /NS /NC /NDL /NFL /NJS /DCOPY:DA /COPY:DAT /NP /XO /R:1000000 /W:30
+
+------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------------------------
+   ROBOCOPY     ::     Robust File Copy for Windows
+-------------------------------------------------------------------------------
+
+  Started : Sunday, August 23, 2015 03:34:29
+   Source : E:\code\Enum.Performance.Library\Working\Src\Enum.Performance.Library\bin\Release\Net40\
+     Dest : E:\code\Enum.Performance.Library\Working\NuGet\lib\net40\
+
+    Files : *.dll
+	    *.pdb
+	    *.xml
+
+Exc Files : *.CodeAnalysisLog.xml
+
+  Options : /NS /NC /NDL /NFL /NJS /DCOPY:DA /COPY:DAT /NP /XO /R:1000000 /W:30
+
+------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------------------------
+   ROBOCOPY     ::     Robust File Copy for Windows
+-------------------------------------------------------------------------------
+
+  Started : Sunday, August 23, 2015 03:34:29
+   Source : E:\code\Enum.Performance.Library\Working\Src\Enum.Performance.Library\bin\Release\Net35\
+     Dest : E:\code\Enum.Performance.Library\Working\NuGet\lib\net35\
+
+    Files : *.dll
+	    *.pdb
+	    *.xml
+
+Exc Files : *.CodeAnalysisLog.xml
+
+  Options : /NS /NC /NDL /NFL /NJS /DCOPY:DA /COPY:DAT /NP /XO /R:1000000 /W:30
+
+------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------------------------
+   ROBOCOPY     ::     Robust File Copy for Windows
+-------------------------------------------------------------------------------
+
+  Started : Sunday, August 23, 2015 03:34:29
+   Source : E:\code\Enum.Performance.Library\Working\Src\Enum.Performance.Library\bin\Release\Net20\
+     Dest : E:\code\Enum.Performance.Library\Working\NuGet\lib\net20\
+
+    Files : *.dll
+	    *.pdb
+	    *.xml
+
+Exc Files : *.CodeAnalysisLog.xml
+
+  Options : /NS /NC /NDL /NFL /NJS /DCOPY:DA /COPY:DAT /NP /XO /R:1000000 /W:30
+
+------------------------------------------------------------------------------
+
+Building NuGet package with ID Enum.Performance.Library and version 1.0.1-beta1
+
+Attempting to build package from 'Enum.Performance.Library.nuspec'.
+Successfully created package 'E:\code\Enum.Performance.Library\Enum.Performance.Library.1.0.1-beta1.nupkg'.
+Successfully created package 'E:\code\Enum.Performance.Library\Enum.Performance.Library.1.0.1-beta1.symbols.nupkg
+'.
+Executing Test
+
+Build Succeeded!
+
+----------------------------------------------------------------------
+Build Time Report
+----------------------------------------------------------------------
+Name           Duration
+----           --------
+Clean          00:00:00.1093910
+Build          00:00:07.8424597
+ConstructNuget 00:00:00.6665623
+Test           00:00:00.0049025
+Total:         00:00:08.8624081
+**********************
+Windows PowerShell transcript end
+End time: 20150823033430
+**********************
