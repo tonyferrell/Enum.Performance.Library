@@ -81,8 +81,11 @@ namespace Enum.Performance.Library
         /// <param name="normalizer">Funct[ion to normalize your input, based on your parsing constraints. Default is no normalization.</param>
         /// <returns>True if the map is created. False if TEnum is not an enum.</returns>
         public static bool TryCreateNameToEnumMap<TEnum>(
-            out Dictionary<string, TEnum> result,
-            Func<string, string> normalizer = null)
+              out Dictionary<string, TEnum> result
+#if !NET20
+            , Func<string, string> normalizer = null
+#endif
+            )
             where TEnum : struct
         {
             var inputType = typeof(TEnum);
@@ -99,7 +102,11 @@ namespace Enum.Performance.Library
             foreach (TEnum enumValue in values)
             {
                 string enumText = enumValue.ToString();
+#if !NET20
                 string key = normalizer == null ? enumText : normalizer(enumText);
+#else
+                string key = enumText;
+#endif
 
                 result[key] = enumValue;
             }

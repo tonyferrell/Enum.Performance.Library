@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Enum.Performance.Library.Net40", "Enum.Performance.Library\Enum.Performance.Library.Net40.csproj", "{B74C7D63-AAE3-4D2B-AB75-62752074E9DE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B74C7D63-AAE3-4D2B-AB75-62752074E9DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B74C7D63-AAE3-4D2B-AB75-62752074E9DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B74C7D63-AAE3-4D2B-AB75-62752074E9DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B74C7D63-AAE3-4D2B-AB75-62752074E9DE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
