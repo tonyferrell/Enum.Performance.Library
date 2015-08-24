@@ -2,7 +2,7 @@
   # $zipFileName = ".zip"
   $majorVersion = "1.0"
   $majorWithReleaseVersion = "1.0.1"
-  $nugetPrelease = "beta1"
+  $nugetPrelease = $null
   $version = GetVersion $majorWithReleaseVersion
   $packageId = "Enum.Performance.Library"
   $buildDocumentation = $false
