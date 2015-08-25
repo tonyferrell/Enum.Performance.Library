@@ -22,6 +22,7 @@ namespace Enum.Performance.UnitTests.Performance
             }
         }
 
+#if !NET20
         [TestMethod]
         public void PerformanceParser_String_to_Enum_with_Normalization_Performance_Tests()
         {
@@ -33,6 +34,7 @@ namespace Enum.Performance.UnitTests.Performance
                 EnumPerformanceParser.TryCreateNameToEnumMap<LargeEnum>(out stringToLargeEnumMap, upperCaseNormalizer);
             }
         }
+#endif // !NET20
 
         [TestMethod]
         public void PerformanceParser_Enum_to_String_Performance_Tests()

@@ -51,7 +51,9 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="Functional\EnumManagerTests.cs" />
     <Compile Include="LargeEnum.cs" />
+    <Compile Include="Performance\EnumManagerPerformanceTests.cs" />
     <Compile Include="Performance\PerformanceParserPerformanceTests.cs" />
     <Compile Include="Functional\PerformanceParserTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

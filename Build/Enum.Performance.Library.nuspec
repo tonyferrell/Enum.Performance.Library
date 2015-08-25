@@ -13,7 +13,7 @@
 
 The ideal solution would be to treat all Enum's as their underlying type, and only do conversions offline. However this is not always feasible, and this package will help by providing some tools to trade off that processing time for a little bit of space.
     </description>
-    <releaseNotes>Add untested support for .Net 4.0, .Net 3.5, and .Net 2.0</releaseNotes>
+    <releaseNotes>Add a generic EnumManager that loads enum values in a static constructor.</releaseNotes>
     <copyright>Copyright 2015</copyright>
     <tags>Enum String Performance Parsing</tags>
   </metadata>

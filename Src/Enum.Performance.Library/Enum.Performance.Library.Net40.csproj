@@ -36,6 +36,7 @@
     <Reference Include="Microsoft.CSharp" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EnumManager.cs" />
     <Compile Include="PerformanceParser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
