@@ -10,28 +10,69 @@ The ideal solution would be to treat all Enum's as their underlying type, and on
 
 Usage
 -----
-To build your cache of conversion values, do something like the following:
+You can now use the provided EnumManager<T> class to do fast string <--> enum conversion.
+
 ```c#
 using Enum.Performance.Library;
+using System;
 
-public static class MyEnumCache
+enum ResultState
 {
-  private static readonly Dictionary<MyEnum, string> enumToStringMap;
-  
-  static MyEnumCache()
-  {
-    EnumPerformanceParser.TryCreateEnumToNameMap(out enumToStringMap);
-  }
-  
-  public static string GetString(MyEnum enumValue)
-  {
-    return enumToStringMap[enumValue];
-  }
+    Success = 1,
+    Failure = 2,
+}
 
-  public static bool TryParse(string enumText, out MyEnum enumValue)
-  {
-    return enumToStringMap.TryGetValue(enumText, out enumValue);
-  }
+public class MyOnlineTool
+{
+    // Depending on your program structure, a static constructor might be an OK initalization point.
+    static MyOnlineTool()
+    {
+        EnumManager<ResultState>.Initalize();
+    }
+
+    // This could be any kind of request handler. Details aren't that important. 
+    public string GetResults(string[] requestData)
+    {
+        // Do some processing.
+        ResultState state = DoSomeWorkUntrusted();
+
+        // Since any value can be cast to an enum, we use a Try pattern to ensure this is a valid enum.
+        string resultString;
+        if (EnumManager<ResultState>.TryGetString(state, out resultString))
+        {
+            return resultString;
+        }
+        else
+        {
+            // DoSomeWork may not be trusted to return a valid value, handle its error here.
+            return String.Empty;
+        }
+    }
+
+    // This could be any kind of request handler. Details aren't that important. 
+    public string GetMoreResults(string[] requestData)
+    {
+        // Do some processing.
+        ResultState state = DoSomeWorkTrusted();
+
+        // Since any value can be cast to an enum, we use a Try pattern to ensure this is a valid enum.
+        string resultString;
+        EnumManager<ResultState>.TryGetString(state, out resultString);
+        return resultString;
+    }
+
+    // Always returns a valid value.
+    public ResultState DoSomeWorkTrusted()
+    {
+        return ResultState.Success;
+    }
+
+    // This may be from code outside of your control, or just something you don't monitor.
+    public ResultState DoSomeWorkUntrusted()
+    {
+        // This is an invalid result state. .NET is OK with this, but we have to be careful when converting to string.
+        return (ResultState)15;
+    }
 }
 ```
 
@@ -40,3 +81,26 @@ Obviously you will need to follow whatever best practices your platform/needs di
 Caution
 -------
 If you are developing an app where startup time is more critical (a mobile or desktop application, for instance) than "running performance" (query serving), you will want to wait until an acceptable time to do your loading. As always, when working with performance, *Measure, measure, measure*!
+
+Licence
+-------
+The MIT License (MIT)
+
+Copyright (c) 2015 Tony Ferrell
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the "Software"), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+the Software, and to permit persons to whom the Software is furnished to do so,
+subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
