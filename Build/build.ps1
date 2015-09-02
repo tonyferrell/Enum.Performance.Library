@@ -1,8 +1,8 @@
 ﻿properties {
   # $zipFileName = ".zip"
   $majorVersion = "1.0"
-  $majorWithReleaseVersion = "1.0.1"
-  $nugetPrelease = $null
+  $majorWithReleaseVersion = "1.1.0"
+  $nugetPrelease = "beta1"
   $version = GetVersion $majorWithReleaseVersion
   $packageId = "Enum.Performance.Library"
   $buildDocumentation = $false

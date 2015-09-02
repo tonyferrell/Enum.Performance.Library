@@ -78,7 +78,7 @@ namespace Enum.Performance.Library
         /// </remarks>
         /// <typeparam name="TEnum">An enumerable type to create the mapping for.</typeparam>
         /// <param name="result">Populated mapping from normalized name to TEnum value </param>
-        /// <param name="normalizer">Funct[ion to normalize your input, based on your parsing constraints. Default is no normalization.</param>
+        /// <param name="normalizer">Function to normalize your input, based on your parsing constraints. Default is no normalization.</param>
         /// <returns>True if the map is created. False if TEnum is not an enum.</returns>
         public static bool TryCreateNameToEnumMap<TEnum>(
               out Dictionary<string, TEnum> result
