@@ -59,7 +59,7 @@ namespace Enum.Performance.Library
             }
         }
 
-        public static bool Initalize()
+        public static bool Initialize()
         {
             // For now, calling this just kicks the static constructor
             return enumType.IsEnum;
